@@ -48,7 +48,7 @@ public class StartDriverSession {
     public static AppiumDriver initializeDriver() throws Exception {
 
         // DesiredCapabilities caps = new DesiredCapabilities();
-        String appPath = "C:/Users/KingSpecOfficial/Downloads/ApiDemos-debug.apk"; // nơi lưu trữ file app apk
+        String appPath = "C:/Users/FileAPK/ApiDemos-debug.apk"; // nơi lưu trữ file app apk
 
         UiAutomator2Options options = new UiAutomator2Options().setDeviceName("pixel_3a")
                 .setAutomationName("UiAutomator2")
