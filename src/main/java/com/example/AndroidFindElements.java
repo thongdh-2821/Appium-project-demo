@@ -7,7 +7,7 @@ import io.appium.java_client.AppiumDriver;
 
 public class AndroidFindElements {
     public static void main(String[] args) throws Exception {
-        AppiumDriver driver = StartDriverSession.initializeDriver();
+    AppiumDriver driver = StartDriverSession.initializeDriver();
 
     WebElement myElementByText = driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().text(\"Accessibility\")"));
     System.out.println("myElementByText " + myElementByText.getText());
