@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: com.example.SampleTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 6.894 s <<< FAILURE! - in com.example.SampleTest
+sampleTest(com.example.SampleTest)  Time elapsed: 6.857 s  <<< ERROR!
+org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. Original error: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: '4.23.1', revision: '656257d8e9'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [f4893778-9aaa-48c0-9cdf-77d8083db1c6, findElement {using=accessibility id, value=Access'ibility}]
+Capabilities {appium:connectHardwareKeyboard: true, appium:databaseEnabled: false, appium:desired: {connectHardwareKeyboard: true, newCommandTimeout: 3600, platformName: ANDROID}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:newCommandTimeout: 3600, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2022, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: f4893778-9aaa-48c0-9cdf-77d8083db1c6
+	at com.example.SampleTest.clickElementByAccessibilityId(SampleTest.java:58)
+	at com.example.SampleTest.sampleTest(SampleTest.java:53)
+
