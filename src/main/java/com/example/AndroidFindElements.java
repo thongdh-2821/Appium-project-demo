@@ -36,8 +36,6 @@ public class AndroidFindElements {
 
     //     WebElement myElementXpathShort = driver.findElement(AppiumBy.xpath("//*[@text=\"Accessibility\"]"));
     //     System.out.println("myElementXpathShort "+myElementXpathShort.getText());
-        //commit
-        System.out.println("a");
     }
     
 }
