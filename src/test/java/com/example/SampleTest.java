@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.remote.options.BaseOptions;
+import io.appium.java_client.android.options.UiAutomator2Options;
 
 public class SampleTest {
 
@@ -20,17 +20,22 @@ public class SampleTest {
     private WebDriverWait wait;
 
     @Before
-    public void setUp() {
-        var options = new BaseOptions()
-                .amend("appium:newCommandTimeout", 3600)
-                .amend("appium:connectHardwareKeyboard", true);
+    public void setUp () {
+        String appPath = "C:/Users/FileAPK/ApiDemos-debug.apk"; // nơi lưu trữ file app apk
+            UiAutomator2Options options = new UiAutomator2Options().setDeviceName("pixel_3a")
+            .setAutomationName("UiAutomator2")
+            .setAvd("Pixel_3a_API_31")
+            .setAvdLaunchTimeout(Duration.ofMillis(180000))
+            .setNewCommandTimeout(Duration.ofMillis(10000))
+            .setApp(appPath);
 
         try {
 
             @SuppressWarnings("deprecation")
             URL appiumServerUrl = new URL("http://127.0.0.1:4723/wd/hub");
             driver = new AndroidDriver(appiumServerUrl, options);
-            wait = new WebDriverWait(driver, Duration.ofMillis(5000));
+            wait = new WebDriverWait(driver, Duration.ofMillis(000));
+
         } catch (MalformedURLException e) {
             e.printStackTrace();
             driver = null; // Trong trường hợp này, driver sẽ là null

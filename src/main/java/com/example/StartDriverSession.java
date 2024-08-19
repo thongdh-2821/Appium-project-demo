@@ -53,8 +53,8 @@ public class StartDriverSession {
         UiAutomator2Options options = new UiAutomator2Options().setDeviceName("pixel_3a")
                 .setAutomationName("UiAutomator2")
                 .setAvd("Pixel_3a_API_31")
-                .setAvdLaunchTimeout(Duration.ofMillis(180000))
-                .setNewCommandTimeout(Duration.ofMillis(10000))
+                .setAvdLaunchTimeout(Duration.ofMinutes(1))
+                .setNewCommandTimeout(Duration.ofMinutes(1))
                 .setApp(appPath);
 
         // Avd dùng để start máy ảo
