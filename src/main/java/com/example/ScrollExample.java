@@ -31,7 +31,7 @@ public class ScrollExample {
         int startX = size.width / 2;            // điểm xuất phát theo chiều ngang (đang đặt là ở giữa màn hình)
         int startY = (int) (size.height * 1);   // điểm xuất phát theo chiều dọc kéo từ cuối màn hình
         int endX = size.width / 2;              // điểm kết thúc theo chiều ngang (đang đặt là ở giữa màn hình)
-        int endY = (int) (size.height * 0);   // điểm kết thúc theo chiều dọc kéo từ cuối màn hình lên 90%
+        int endY = (int) (size.height * -1);   // điểm kết thúc theo chiều dọc kéo từ cuối màn hình lên 90%
 
         // Thực hiện thao tác cuộn
         TouchAction touchAction = new TouchAction((PerformsTouchActions) driver);
@@ -43,15 +43,7 @@ public class ScrollExample {
 
         driver.findElement(textFields).click();
         driver.findElement(editText).sendKeys("my text");
-        Thread.sleep(3000);
+        Thread.sleep(300);
         driver.findElement(editText).clear();
-    }
-
-    ScrollExample(AppiumDriver driver) {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-
-    void runTest() {
-        throw new UnsupportedOperationException("Not supported yet.");
     }
 }
