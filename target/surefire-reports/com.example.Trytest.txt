@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: com.example.Trytest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 21.451 s <<< FAILURE! - in com.example.Trytest
+sampleTest(com.example.Trytest)  Time elapsed: 21.272 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.support.ui.WebDriverWait.until(java.util.function.Function)" because "this.wait" is null
+	at com.example.Trytest.clickElementByAccessibilityId(Trytest.java:48)
+	at com.example.Trytest.sampleTest(Trytest.java:43)
+
